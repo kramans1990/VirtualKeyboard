@@ -1,0 +1,113 @@
+.keyboard-grid-container{
+    display: grid;
+    grid-template-rows: repeat(5 40px);
+    row-gap: 10px;
+    background: var(--commonBackground);
+    max-width: 840px;
+    height: 340px;
+    margin: 0 auto;
+    /* //justify-content: space-around; */
+    align-content: space-around;  
+}
+#divtitle{
+    max-width: 840px;  
+    margin: 0 auto;
+}
+.text-container{
+    width: 835px;
+    height: 300px;
+    margin: 0 auto;
+}
+#textArea{
+    width: 835px;
+    height: 300px;
+    margin: 0 auto;
+}
+:root {
+    --keyColor: rgb(255, 255, 255);
+    --mainKeyColor: rgb(0, 0, 0);
+    --baseKeyColor : rgb(255,0,0);
+    --commonBackground : #ededed;
+  }
+.row{
+    height: 50px;
+    column-gap: 10px;
+}
+
+#row1{
+    display:grid;
+    grid-template-columns: repeat(13 , 50px) 115px;
+     justify-content: space-around;
+    justify-content: center;
+    column-gap: 5px;
+    height: 50px;
+}
+#row2{
+    display:grid;
+    grid-template-columns: 60px repeat(13 , 50px) 50px ;
+     justify-content: space-around;
+    justify-content: center;
+    column-gap: 5px;
+    height: 50px;
+}
+#row3,#row4{
+    display:grid;
+    grid-template-columns: 115px repeat(11 , 50px) 105px ;
+     justify-content: space-around;
+    justify-content: center;
+    column-gap: 5px;
+    height: 50px;
+}
+#row5{
+    display:grid;
+    grid-template-columns:  repeat(3 , 50px) 390px repeat(5,50px);
+     justify-content: space-around;
+    justify-content: center;
+    column-gap: 5px;
+    height: 50px;
+}
+label{
+    -moz-user-select: none;
+     -webkit-user-select: none;
+      -ms-user-select:none; 
+    user-select:none;-o-user-select:none;
+}
+.key{
+    background : var(--keyColor);
+    align-content: center;
+    display: flex;
+    flex-direction:column;
+    border-radius: 5px;
+}
+.hight-light{
+    background: greenyellow;
+}
+.key:hover{
+    opacity: 0.6;
+    cursor:auto;
+    border: 3px crimson;
+}
+.char-base{
+    text-align: left;
+    margin-left: 3px;
+    color: var(--baseKeyColor);
+    font-size: medium;
+    height: 13px;
+    
+}
+.char-primary{
+    text-align: center;
+    color: var(--mainKeyColor);
+    font-size: larger;
+}
+.small{
+    font-weight: 100;
+}
+.large{
+   font-weight: 500;
+}
+
+.pressed{
+    background-color: greenyellow;
+}
+
