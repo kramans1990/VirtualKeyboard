@@ -257,7 +257,7 @@ document.getElementsByTagName('HEAD')[0].appendChild(link);
 
    let textArea = this.document.createElement('textarea');
   textArea.id= "textArea";
-  // textArea.onkeydown = "return false";
+
    textArea.className="text-Area";
   textcontainer.appendChild(textArea);
   
