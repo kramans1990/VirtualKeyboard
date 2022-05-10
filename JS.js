@@ -297,6 +297,7 @@ document.body.appendChild(title);
   keyboardgridcontainer.appendChild(row5);
    this.document.body.appendChild(keyboardgridcontainer);
 GenerateKeyboard();
+   setKeyboard();
 this.document.addEventListener('keydown' , keyDownHandler)
 this.document.addEventListener('keyup' , keyUpHandler)
 
