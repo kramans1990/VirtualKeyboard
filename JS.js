@@ -1,5 +1,3 @@
-//Язык раскладки
-
 let lang = "";
 let isCaps = false;
 let isCapsPressed = false;
@@ -258,7 +256,9 @@ document.getElementsByTagName('HEAD')[0].appendChild(link);
   textcontainer.className = "text-container";
 
    let textArea = this.document.createElement('textarea');
-  textArea.id= "textArea";textArea.onkeydown = "return false"; textArea.className="text-Area";
+  textArea.id= "textArea";
+  // textArea.onkeydown = "return false";
+   textArea.className="text-Area";
   textcontainer.appendChild(textArea);
   
  let title = this.document.createElement('div');
@@ -300,7 +300,15 @@ GenerateKeyboard();
 this.document.addEventListener('keydown' , keyDownHandler)
 this.document.addEventListener('keyup' , keyUpHandler)
 
+let link_ = document.createElement('div');
+link_.textContent = "Клавиатура создана в системе Windows  Ссылка на ";
+link_.className = "text-container";
+document.body.appendChild(link_);
+let linkpr = document.createElement('a');
+linkpr.textContent = "PullReauest:";
 
+linkpr.href = "https://github.com/kramans1990/VirtualKeyboard/pull/1";
+link_.appendChild(linkpr);
 });
 
 
@@ -676,5 +684,3 @@ KeysArray.push(k5_9);row5.appendChild(k5_9.GetKey());
 
 
    }
-   
-
