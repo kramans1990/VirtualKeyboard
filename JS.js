@@ -260,7 +260,7 @@ document.getElementsByTagName('HEAD')[0].appendChild(link);
 
    textArea.className="text-Area";
   textcontainer.appendChild(textArea);
-  
+   textArea.setAttribute ('onkeydown' , "return false");
  let title = this.document.createElement('div');
  title.id = 'divtitle';
  title.innerText = 'Переключение языков: Левый Alt + Левый Shift';
